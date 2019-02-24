@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AppTitle from "./AppTitle"
 
-export default class Search extends Component {
+export default class NameForm extends Component {
     searchBooks = () => {
         //CALL google API connected to search button
     }
