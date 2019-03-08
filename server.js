@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require('path');
-const PORT = process.env.PORT || 30002;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 //Require mongoose
@@ -17,7 +17,7 @@ if(process.env.NODE_ENV === "production") {
 
 //Connect to the mongo DB
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-mongoose.connect("mongod://localhost/unit18Populater", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
 
 
 //Define API route here
